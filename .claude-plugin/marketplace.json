@@ -1,0 +1,8 @@
+{
+  "name": "claude-code-model-speed",
+  "description": "Live model output speed (tokens/s) for Claude Code — streaming estimate and exact per-response measurement.",
+  "owner": { "name": "MIN202299" },
+  "plugins": [
+    { "name": "model-speed", "source": "./" }
+  ]
+}

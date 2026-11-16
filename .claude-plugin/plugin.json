@@ -1,0 +1,41 @@
+{
+  "name": "model-speed",
+  "version": "0.3.0",
+  "description": "Shows the model's output speed (tokens/s) below claude-hud in the status line, or above the prompt; live while streaming, measured after each response.",
+  "author": { "name": "MIN202299" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "position": {
+      "type": "string",
+      "title": "Display position",
+      "description": "Where to show the speed: statusline (below claude-hud, needs the statusline wrapper), band (above the prompt), or both",
+      "options": ["statusline", "band", "both"],
+      "default": "statusline"
+    },
+    "showTtft": {
+      "type": "boolean",
+      "title": "Show TTFT",
+      "description": "Show time to first token (TTFT)",
+      "default": true
+    },
+    "showTokens": {
+      "type": "boolean",
+      "title": "Show token count",
+      "description": "Show the output token count",
+      "default": true
+    },
+    "showModel": {
+      "type": "boolean",
+      "title": "Show model name",
+      "description": "Show the model name",
+      "default": false
+    },
+    "showAvg": {
+      "type": "boolean",
+      "title": "Show session average",
+      "description": "Show the session's average output speed",
+      "default": true
+    }
+  }
+}
